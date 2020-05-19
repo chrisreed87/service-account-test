@@ -1,0 +1,12 @@
+
+kind: Pod
+apiVersion: v1
+metadata:
+  name: dummy-pod
+spec:
+  serviceAccountName: demo-sa
+  containers:
+    - name: dummypod
+      image: alpine
+      command: ["sleep", "1000"]
+  restartPolicy: Never
